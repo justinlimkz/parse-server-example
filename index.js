@@ -13,8 +13,8 @@ if (!databaseUri) {
 var pushConfig = {};
 
 if (process.env.GCM_SENDER_ID && process.env.GCM_API_KEY) {
-    pushConfig['android'] = { senderId: process.env.GCM_SENDER_ID || '',
-                              apiKey: process.env.GCM_API_KEY || ''};
+    pushConfig['android'] = { senderId: process.env.GCM_SENDER_ID || 'AIzaSyAhfQ_9aXC_fTvImXyzyV4bOvy7Jhszw2A',
+                              apiKey: process.env.GCM_API_KEY || '425119621285'};
 }
 
 if (process.env.APNS_ENABLE) {
