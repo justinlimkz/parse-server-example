@@ -40,7 +40,7 @@ if (process.env.S3_ENABLE) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://justinlimkz:jherostrom2@ds033096.mlab.com:33096/heroku_g814k1g5',
+  databaseURI: databaseUri || 'mongodb://heroku_g814k1g5:<dbpassword>@ds033096.mlab.com:33096/heroku_g814k1g5',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'litevent',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
